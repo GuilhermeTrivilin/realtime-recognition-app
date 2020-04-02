@@ -33,7 +33,14 @@ const Scan = (props) => {
                 {!googleVisionDetetion && loading &&
                     <View style={styles.SpinnerStyle}>
                         <ActivityIndicator size={props.size || 'large'} />
-                        <Text style={{ color: 'white', fontSize: 18, fontWeight: 'bold' }}>Pesquisando no banco de dados do Google Vision API</Text>
+                        <Text style={{
+                            color: 'white',
+                            fontSize: 18,
+                            fontWeight: 'bold',
+                            textAlign: 'center'
+                        }}>
+                            Pesquisando no banco de dados do Google Vision API
+                            </Text>
                     </View>
                 }
                 {/* When Google Vision returns response successfully */}
